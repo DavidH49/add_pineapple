@@ -1,0 +1,12 @@
+schema_version = "1.0.0"
+id = "add_pineapple"
+version = "1.0.0"
+name = "Add Pineapple"
+tagline = "The Pineapple Generator 3.000"
+maintainer = "Daniel Brundhilde Twoface <david@mh-network.net>"
+type = "add-on"
+tags = ["Add Mesh", "3D View"]
+blender_version_min = "4.3.0"
+license = [
+    "SPDX:GPL-3.0-or-later",
+]
