@@ -11,24 +11,18 @@ import bpy
 
 
 class OBJECT_OT_pineapple(bpy.types.Operator):
-    """Add a pineapple"""
-    bl_idname = "mesh.pineapple"
+    """Construct a pineapple mesh."""
+    bl_idname = "mesh.primitive_pineapple_add"
     bl_label = "Pineapple"
     bl_options = {'REGISTER', 'UNDO'}
 
     def execute(self, context):
         util.deselect_all()
         
-        mesh_data = bpy.data.meshes.new("pineapple")
-        mesh_data.from_pydata(mesh.VERTS, mesh.EDGES, mesh.FACES)
-        mesh_obj = bpy.data.objects.new("Pineapple", mesh_data)
-        
-        bpy.context.collection.objects.link(mesh_obj)
-        bpy.context.view_layer.objects.active = mesh_obj
-        
-        mesh_obj.select_set(True)
-        mesh_obj.matrix_world = bpy.context.scene.cursor.matrix
+        mesh_data = util.construct_data("pineapple", mesh.VERTS, mesh.EDGES, mesh.FACES)
+        mesh_obj = util.construct_mesh("Pineapple", mesh_data)
 
+        util.select_mesh(mesh_obj)
         util.recalc_normals()
         
         return { 'FINISHED' }

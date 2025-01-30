@@ -1,6 +1,6 @@
 schema_version = "1.0.0"
 id = "add_pineapple"
-version = "1.0.0"
+version = "1.1.0"
 name = "Add Pineapple"
 tagline = "The Pineapple Generator 3.000"
 maintainer = "Daniel Brundhilde Twoface <david@mh-network.net>"
