@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 DDD
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+
 VERTS = [(-0.336068719625473,
         -0.336068719625473,
         0.15293417870998383), (-0.28395622968673706,

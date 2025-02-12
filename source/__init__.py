@@ -1,11 +1,9 @@
-if "bpy" in locals():
-    import importlib
-    importlib.reload(mesh)
-    importlib.reload(util)
-else:
-    from . import mesh
-    from . import util
+# SPDX-FileCopyrightText: 2025 DDD
+# SPDX-License-Identifier: GPL-3.0-or-later
 
+
+from . import mesh
+from . import util
 
 import bpy
 
