@@ -4,6 +4,9 @@ Blender addon / extension practice.
 I have no idea why you would need this.  
 An alternative to suzanne, perhaps?
 
+![Blender's "Add" menu with an additional button to create a pineapple primitive](./images/menu.png)
+![3D Render of the pineapple primitive](./images/pineapple_render_2.jpg)
+
 ## Building
 To build, add a folder named "build" and run build_pineapple.sh or build_pineapple.bat
 
